@@ -289,6 +289,6 @@ set $urgent-bg-color     #E53935
 # Start i3bar to display a workspace bar (plus the system information i3blocks  
 # finds out, if available)
 bar {
-        status_command i3blocks -c ~/.config/i3blocks/config
+        status_command i3status
         position top
 }
