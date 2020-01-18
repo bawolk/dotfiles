@@ -231,10 +231,10 @@ fileviewer *.[1-8] man ./%c | col -b
 
 " Images
 filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
+        \ {View in ristretto}
+        \ ristretto %c &,
         \ {View in feh}
         \ feh %d &,
-        \ {View in ristretto}
-        \ ristretto %c,
         \ {View in sxiv}
         \ sxiv %f,
         \ {View in gpicview}

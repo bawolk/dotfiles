@@ -147,6 +147,9 @@ bindsym $mod+Shift+Right move right
 #################                          Tiling parameters                                        #################
 #####################################################################################################################
 
+# default workspace layout
+workspace_layout tabbed
+
 # split in horizontal orientation
 bindsym $mod+bar split h
 
