@@ -170,7 +170,12 @@ command! reload :write | restart
 " program.
 
 " Pdf
-filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
+filextype *.pdf
+        \ {View in evince}
+        \ evince %c &>/dev/null &,
+        \ zathura %c %i &,
+        \ apvlv %c,
+        \ xpdf %c
 fileviewer *.pdf pdftotext -nopgbrk %c -
 
 " PostScript
