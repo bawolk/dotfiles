@@ -228,9 +228,7 @@ assign [class="Thunderbird"] $ws2
 assign [class="Code"] $ws3
 assign [class="Cherrytree"] $ws4
 for_window [instance="keepassxc"] floating enable, resize set 800 800, move scratchpad
-for_window [urgent="latest" class="Firefox"] focus
-
-#for_window [title="VIFM"] fullscreen
+focus_on_window_activation focus
 
 #####################################################################################################################
 #################                          execute applications at boot time                        #################
