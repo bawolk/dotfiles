@@ -504,3 +504,5 @@ bmark! ~/Documents/ places
 bmark! ~/Downloads/ places
 bmark! / places
 
+command! fzffind :execute 'goto' "'".term('fdfind -H | fzf 2> /dev/tty')."'"
+nnoremap <c-f> :fzffind<cr>
