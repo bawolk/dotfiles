@@ -109,14 +109,16 @@ if !has('win')
 endif
 
 " Set custom status line look
-
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+highlight User1 ctermfg=yellow ctermbg=black
+set statusline="  %= %1*%T%* %A %10u:%-7g %15s %20d  "
 
 " ------------------------------------------------------------------------------
 
 " :mark mark /full/directory/path [filename]
 
 mark h ~/
+mark r /
+mark d /Downloads
 
 " ------------------------------------------------------------------------------
 
@@ -496,9 +498,6 @@ set dotfiles
 " Unmount device currently under the cursor
 command! um udevil umount %c:p
 
-" Bookmark places
-bmark! ~/ places
-bmark! ~/Documents/ places 
-bmark! ~/Downloads/ places
-bmark! / places
-
+" Use fd and fzf to find files
+command! FZFfind :execute 'goto' "'".term('fd -H | /home/bruce/.fzf/bin/fzf 2> /dev/tty')."'" 
+nnoremap <c-f> :FZFfind<cr>
