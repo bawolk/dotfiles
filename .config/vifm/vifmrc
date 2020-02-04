@@ -117,6 +117,8 @@ set statusline="  %= %1*%T%* %A %10u:%-7g %15s %20d  "
 " :mark mark /full/directory/path [filename]
 
 mark h ~/
+mark r /
+mark d /Downloads
 
 " ------------------------------------------------------------------------------
 
@@ -497,12 +499,6 @@ set dotfiles
 
 " Unmount device currently under the cursor
 command! um udevil umount %c:p
-
-" Bookmark places
-bmark! ~/ places
-bmark! ~/Documents/ places 
-bmark! ~/Downloads/ places
-bmark! / places
 
 command! fzffind :execute 'goto' "'".term('fdfind -H | fzf 2> /dev/tty')."'"
 nnoremap <c-f> :fzffind<cr>
