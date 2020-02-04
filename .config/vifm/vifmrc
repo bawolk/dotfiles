@@ -109,8 +109,8 @@ if !has('win')
 endif
 
 " Set custom status line look
-
-set statusline="  Hint: %z%= %T %A %10u:%-7g %15s %20d  "
+highlight User1 ctermfg=yellow ctermbg=black
+set statusline="  %= %1*%T%* %A %10u:%-7g %15s %20d  "
 
 " ------------------------------------------------------------------------------
 
@@ -506,3 +506,4 @@ bmark! / places
 
 command! fzffind :execute 'goto' "'".term('fdfind -H | fzf 2> /dev/tty')."'"
 nnoremap <c-f> :fzffind<cr>
+command! link ln -s %d/%f %D
