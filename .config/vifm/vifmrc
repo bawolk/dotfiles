@@ -70,7 +70,7 @@ colorscheme Default
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
 " See man date or man strftime for details.
 
-set timefmt=%m/%d\ %H:%M
+set timefmt="%b %d %Y %H:%M"
 
 " Show list of matches on tab completion in command-line mode
 
@@ -117,8 +117,9 @@ set statusline="  %= %1*%T%* %A %10u:%-7g %15s %20d  "
 " :mark mark /full/directory/path [filename]
 
 mark h ~/
-mark r /
+mark s /
 mark d ~/Downloads
+mark r ~/rotary
 
 " ------------------------------------------------------------------------------
 
@@ -395,7 +396,7 @@ set vifminfo=dhistory,savedirs,chistory,state,tui,shistory,
 
 " Customize view columns a bit (enable ellipsis for truncated file names)
 "
-" set viewcolumns=-{name}..,6{}.
+set viewcolumns=-{name}..,{mtime},6{}.
 
 " Filter-out build and temporary files
 "
