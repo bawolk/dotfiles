@@ -63,6 +63,9 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 # start rofi (a program launcher); themes are found in /usr/share/rofi/themes
 bindsym $mod+d exec rofi -theme Arc -show drun -font "System San Francisco Display 12"
 
+# start xfce4-appfinder
+bindsym $mod+F1 exec --no-startup-id xfce4-appfinder
+
 #####################################################################################################################
 #################                          how to exit, logoff, suspend, ...                        #################
 #####################################################################################################################
