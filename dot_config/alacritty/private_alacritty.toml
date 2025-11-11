@@ -1,0 +1,11 @@
+[window]
+  decorations = "None"
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[general]
+import = ["/home/bruce/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
